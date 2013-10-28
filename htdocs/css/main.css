@@ -94,20 +94,189 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+                        Tyrone's custom styles
    ========================================================================== */
 
+/*********************
+       FONTFACE
+*********************/
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.0.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.0.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.0.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.0.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.0.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.icon{
+    font-family: 'FontAwesome';
+    color: #000;
+    font-size: 50px;
+}
+/*********************
+        RESETS
+*********************/
+body{
+    color: #707173;
+}
+p{
+    font-size: 12px;
+}
+strong{
+    color: #00a2a4;
+}
+.wrapper{
+    width: 800px;
+    margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6{
+    color: #00a2a4;
+    font-weight: 100;
+}
+h1{
+    background: #00a2a4;
+    font-size: 22px;
+    color: #fff;
+    padding: 5px 10px;
+}
+h2{
+    color: #00a2a4;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-bottom: 1px dashed #00a2a4;
+}
+h3{
+    color: #00a2a4;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-bottom: 1px dashed #00a2a4;
+}
+
+/*********************
+      CLEARFIXIN'
+*********************/
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.response-img{
+    max-width: 100%;
+    min-width: 100%;
+}
+
+
+/*********************
+      HEADER AREA
+*********************/
+header{
+    position: relative;
+}
+.download_desktop{
+    position: absolute;
+    bottom: -50px;
+    right: -20px;
+}
+
+/*********************
+      FORM AREA
+*********************/
+.micro-infos{width: 54%; float: left;}
+.micro-form{ width: 40%; float: right; }
+
+.fg-form-titles, .fg-form-inputs{
+    border: 5px solid #fff;
+    padding-left: 20px;
+}
+
+.fg-form-titles{
+    vertical-align: top;
+    color: #00a2a4;
+    background: #eee;
+}
+.fg-form-titles p{
+    width: 100px;
+}
+input{
+  width: 95%
+}
+select{
+    width: 100%;
+}
+input{
+    padding: 2%;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+input[type=submit]{
+    background: #e67e22;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 100;
+    padding: 10px 2%;
+    width: 101%;
+}
+input[type=checkbox]{
+    width: 25px;
+}
+.radio-txt{
+    font-size: 12px;
+}
+textArea{
+    height: 150px;
+    width: 100%;
+}
 
 
 
+/*********************
+      FOOTER AREA
+*********************/
+footer{
+    background: #565757;
+    margin: 50px 0 0 0;
+    padding: 50px 0;
+}
 
-
-
-
-
-
-
-
+.contact-deets{
+    width: 30%;
+    color: #fff;
+}
+.contact-deets a{
+    color: #00a2a4;
+    text-decoration: none;
+}
+.contact-deets a:hover{
+    color: #e67e22;
+}
+.divider{
+    width: 5%
+}
+.social{
+    margin: 0 10px 0 0;
+}
+.social-holder a{
+    color: #999;
+    text-decoration: none;
+}
+.social-holder a:hover{
+    color: #fff;
+}
 
 
 
@@ -220,8 +389,29 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (max-width: 800px) {
+    /*---- WRAPPER --*/
+    .wrapper{
+        width: 90%;
+    }
+    /*********************
+        FORM AREA
+  *********************/
+  .micro-infos{width: 100%; float: none;}
+  .micro-form{ width: 100%; float: none;}
+  
+  .fg-form-titles p{
+    width: 100px;
+  }
+  /*********************
+        FOOTER AREA
+  *********************/
+  .contact-deets{
+    width: 100%;
+    color: #fff;
+    }
+    .divider{width: 0;}
+  
 }
 
 @media print,
