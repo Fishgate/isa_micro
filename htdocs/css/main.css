@@ -228,6 +228,7 @@ input[type=submit]{
     border: none;
     text-transform: uppercase;
     font-weight: 100;
+    font-size: 12px;
     padding: 10px 2%;
     width: 101%;
 }
@@ -278,6 +279,18 @@ footer{
     color: #fff;
 }
 
+
+/*********************
+    THANK YOU AREA
+*********************/
+.readmore{
+    text-decoration: none;
+    color: #fff;
+    background: #e67e22;
+    padding: 10px;
+    font-weight: 100;
+    line-height: 30px;
+}
 
 
 
