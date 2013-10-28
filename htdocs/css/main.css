@@ -280,6 +280,18 @@ footer{
 }
 
 
+/*********************
+    THANK YOU AREA
+*********************/
+.readmore{
+    text-decoration: none;
+    color: #fff;
+    background: #e67e22;
+    padding: 10px;
+    font-weight: 100;
+    line-height: 30px;
+}
+
 
 
 
