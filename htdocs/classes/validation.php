@@ -14,8 +14,24 @@ function validateEmail ($email) {
     return filter_var($email, FILTER_VALIDATE_EMAIL);
 }
 
+function validateNum($int){
+    if(!ctype_alpha($int)){
+        return true;
+    }else{
+        return false;
+    }
+}
+
 function validate ($string) {
     if(!empty($string)) {
+        return true;
+    }else{
+        return false;
+    }
+}
+
+function validateTrick($string){
+    if(empty($string)){
         return true;
     }else{
         return false;
@@ -30,10 +46,18 @@ try {
     die($ex->getMessage());
 }
 
+
+
 if(
-    validate($_POST['name']) &&
-    validate($_POST['topic']) &&
-    validateEmail($_POST['email'])
+    validate($_POST['Name']) &&
+    validate($_POST['Surname'])&&
+    validate($_POST['School'])&&
+    validateNum($_POST['Grade'])&&
+    validate($_POST['Course'])&&
+    validateNum($_POST['Cell'])&&
+    validate($_POST['Email'])&&
+    validateTrick($_POST['Trick'])
+    
 ){
     try {
         $log_form = $conn->prepare('INSERT INTO '.DB_LOGS_TBL.' (name, surname, school, grade, course_interest, cell_number, email, hear_about_us, message, date, unix) VALUES (:name, :surname, :school, :grade, :course_interest, :cell_number, :email, :hear_about_us, :message, :date, :unix)');
@@ -50,11 +74,10 @@ if(
         $log_form->bindValue(':date',               date('d-m-Y'));
         $log_form->bindValue(':unix',               time());
 
+        
         if($log_form->execute()){
-
-            if ($_POST['Trick'] == ""){
-
-                include(get_template_directory() . '/class.phpmailer.php');
+            
+                include('./class.phpmailer.php');
 
                 $phpmailer = new PHPMailer();
 
@@ -63,9 +86,9 @@ if(
                 $phpmailer->AddReplyTo($_POST['Email'], $_POST['Name']);
                 $phpmailer->IsHTML(true);
 
-                $phpmailer->AddAddress("info@isacarstens.co.za");
-                $phpmailer->AddAddress("jan@fishgate.co.za");
-                $phpmailer->AddAddress("renier@ilead.co.za");
+                $phpmailer->AddAddress("tyrone@fishgate.co.za");
+                /*$phpmailer->AddAddress("jan@fishgate.co.za");
+                $phpmailer->AddAddress("renier@ilead.co.za");*/
 
                 $phpmailer->Subject = "Enquiry from Website";
 
@@ -83,19 +106,19 @@ if(
 
                 $phpmailer->Body = $body;
 
-                $phpmailer->Send();
+                if($phpmailer->Send()){
+                    echo 'SUCCESS';
+                }
 
-            }else{
-                
-            }
         }
     } catch (PDOException $ex) {
         echo $ex->getMessage();
     }
     
+    
+    
 }else{
     die('Please fill in all the required form fields correctly before submitting.');
 }
-
 
 ?>

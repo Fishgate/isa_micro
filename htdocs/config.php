@@ -12,9 +12,9 @@
  */
 //localhost
 define('DB_HOST',       'localhost');
-define('DB_NAME',       'isamicro');
+define('DB_NAME',       'isa_micro');
 define('DB_USERNAME',   'root');
-define('DB_PASSWORD',   '');
+define('DB_PASSWORD',   'root');
 define('DB_LOGS_TBL',   'fg_enquiry_log');
 
 /**
@@ -22,7 +22,7 @@ define('DB_LOGS_TBL',   'fg_enquiry_log');
  * 
  */
 define('ADMIN_EMAIL', 'info@isacarstens.co.za');
-define('ADMIN_NAME', 'Integrated Solutions');
+define('ADMIN_NAME', 'Isa Carstens');
 
 /**
  * Set the project state here for error handling, saves the end user from 
