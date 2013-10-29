@@ -82,7 +82,7 @@
                                 <tr>
                                     <td class="fg-form-titles"><p>Email*</p></td>
                                     <td class="fg-form-inputs"><input type="email" id="fg-email" /></td>
-                                </tr>
+                                </tr>   
                                 <tr>
                                     <td class="fg-form-titles"><p>Where did you<br />hear about us?</p></td>
                                     <td class="fg-form-inputs">
