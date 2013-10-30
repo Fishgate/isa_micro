@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Isa Carstens Applications for 2014</title>
+        <title>Isa Carstens Academy: Apply Now for 2014</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -43,7 +43,7 @@
                 <article class="micro-form"><!-- floats left -->
                     <!--=========================== FG FORM =========-->
                     <div id="main-form">
-                        <h1>Enquire Now</h1>
+                        <h1 class="gold">Applications for 2014: Enquire Now!</h1>
                         <p style="margin: 10px 0;">Please complete below form and we will get back to you as soon as we can.</p>
                         <form id="fg_form">
                             <table width="100%">
@@ -124,6 +124,7 @@
                                 </tr>
                             </table>
                         </form>
+                        <br/>
                     </div>
                     <!--=========================== END FG FORM =========-->
                 </article>
@@ -133,8 +134,12 @@
                 --------------------->
                 <article class="micro-infos"><!-- floats right -->
                     <!-- //////////////////////////////// COURSE -->
+                    <h1>Apply Now for 2014</h1>
+                    <p>Are you passionate about beauty and wish to follow a career in the health and skin care industry? Do you take pride in your own appearance, and would like to empower others to feel the same? Then you should study with the leaders in health and skin care.</p>
+                    <p>Apply now for 2014 studies at the Isa Carstens Academy.<br/><strong>Application deadline:</strong> 15 January 2014</p>
+                    <br />
                     <h1>Programmes on offer:</h1>
-                    <h2>Diploma: Somatology</h2>
+                    <h2><i class="left social course-icon fa fa-chevron-right"></i>Diploma: Somatology</h2>
                     <p>
                         <strong>Entry Requirements:</strong> A National Senior Certificate (NSC) from the South African Matriculation Board with an endorsement from the board certifying that you are eligible for Diploma study at a tertiary institution.
                     </p>
@@ -146,7 +151,7 @@
                     </p>
                     <!-- //////////////////////////////// COURSE -->
                     <br />
-                    <h2>Gap</h2>
+                    <h2><i class="left social course-icon fa fa-chevron-right"></i>Gap</h2>
                     <p>
                         <strong>Entry Requirements:</strong> A National Senior Certificate (NSC) from the South African Matriculation Board
                     </p>
@@ -158,7 +163,7 @@
                     </p>
                     <!-- //////////////////////////////// COURSE -->
                     <br />
-                    <h2>IMM GSM Marketing Management, BComm and BBam</h2>
+                    <h2><i class="left social course-icon fa fa-chevron-right"></i>IMM GSM Marketing Management, BComm and BBam</h2>
                     <p>
                         <strong>Higher Certificate and Diploma:</strong> Senior Certificate (Grade 12) or equivalent, including an achievement rating of at least 3 (40 – 49%) in English home language or 4 (50 – 59%) in English first additional language. 
                     </p>

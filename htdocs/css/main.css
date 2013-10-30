@@ -20,7 +20,15 @@ textarea {
 
 html {
     font-size: 1em;
-    line-height: 1.4;
+    line-height: 1.5;
+}
+
+.gold {
+    background: #FF975E;
+}
+.course-icon {
+    color: #FF975E;
+    padding-top: 7px;    
 }
 
 /*
@@ -125,7 +133,7 @@ strong{
     color: #00a2a4;
 }
 .wrapper{
-    width: 800px;
+    width: 960px;
     margin: 0 auto;
 }
 h1, h2, h3, h4, h5, h6{
@@ -136,19 +144,19 @@ h1{
     background: #00a2a4;
     font-size: 22px;
     color: #fff;
-    padding: 5px 10px;
+    padding: 5px 15px;
 }
 h2{
     color: #00a2a4;
     font-size: 18px;
-    padding: 5px 10px;
-    border-bottom: 1px dashed #00a2a4;
+    padding: 5px 0px 10px;
+    border-bottom: 1px dotted #00a2a4;
 }
 h3{
     color: #00a2a4;
     font-size: 14px;
-    padding: 5px 10px;
-    border-bottom: 1px dashed #00a2a4;
+    padding: 5px 0px 10px;
+    border-bottom: 1px dotted #00a2a4;
 }
 
 /*********************
@@ -182,6 +190,8 @@ h3{
 *********************/
 header{
     position: relative;
+    margin-top: 45px;
+    margin-bottom: 35px;
 }
 .download_desktop{
     position: absolute;
@@ -197,7 +207,8 @@ header{
 
 .fg-form-titles, .fg-form-inputs{
     border: 5px solid #fff;
-    padding-left: 20px;
+    border-left: 0px;
+    padding-left: 15px;
 }
 
 .fg-form-titles{
@@ -220,10 +231,10 @@ input{
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -o-border-radius: 5px;
-    border-radius: 5px;
+    border-radius: 0px;
 }
 input[type=submit]{
-    background: #e67e22;
+    background: #FF975E;
     color: #fff;
     border: none;
     text-transform: uppercase;
@@ -286,7 +297,7 @@ footer{
 .readmore{
     text-decoration: none;
     color: #fff;
-    background: #e67e22;
+    background: #FF975E;
     padding: 10px;
     font-weight: 100;
     line-height: 30px;
@@ -402,7 +413,7 @@ footer{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 960px) {
     /*---- WRAPPER --*/
     .wrapper{
         width: 90%;

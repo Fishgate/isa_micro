@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Isa Carstens Applications for 2014</title>
+        <title>Isa Carstens Academy: Apply Now for 2014</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -41,9 +41,10 @@
                 <article>
                     <h1>Thank you!</h1>
                     <center>
-                        <p>Your form has been submitted to us, thanks for showing an interest in enrolling at Isa Carstens.</p>
-                        <p>For more infrmations about the academy, courses and hostel facilities, please see our main site:</p>
-                        <p><a class="readmore" href="http://www.isacarstens.co.za" target="_blank">www.isacarstens.co.za &nbsp; &rangle;</a></p>
+                        <p>Thank you for submitting your enquiry to the ISA Castens Academy.<br/>One of our staff members will be in touch with you shortly with the relevant information that you requested.</p>
+                        <p>For more infrmation about the academy, courses and hostel facilities, please see our main site:</p>
+                        <br/>
+                        <p><a class="readmore" href="http://www.isacarstens.co.za" target="_blank">www.isacarstens.co.za</a></p>
                     </center>
                 </article>
                 
