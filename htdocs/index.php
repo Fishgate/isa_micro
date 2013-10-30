@@ -45,23 +45,26 @@
                     <div id="main-form">
                         <h1>Enquire Now</h1>
                         <p style="margin: 10px 0;">Please complete below form and we will get back to you as soon as we can.</p>
-                        <form method="post" action="">
+                        <form id="fg_form">
                             <table width="100%">
                                 <tr>
                                     <td class="fg-form-titles"><p>Name*</p></td>
-                                    <td class="fg-form-inputs"><input type="text" id="fg-name" /></td>
+                                    <td class="fg-form-inputs">
+                                        <input type="text" id="fg-name" name="Name" />
+                                        <input type="hidden" id="fg-trick" name="Trick" />
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td class="fg-form-titles"><p>Surname*</p></td>
-                                    <td class="fg-form-inputs"><input type="text" id="fg-surname" /></td>
+                                    <td class="fg-form-inputs"><input type="text" id="fg-surname" name="Surname" /></td>
                                 </tr>
                                 <tr>
                                     <td class="fg-form-titles"><p>School*</p></td>
-                                    <td class="fg-form-inputs"><input type="text" id="fg-school" /></td>
+                                    <td class="fg-form-inputs"><input type="text" id="fg-school" name="School" /></td>
                                 </tr>
                                 <tr>
                                     <td class="fg-form-titles"><p>Grade*</p></td>
-                                    <td class="fg-form-inputs"><input type="text" id="fg-grade" /></td>
+                                    <td class="fg-form-inputs"><input type="text" id="fg-grade" name="Grade" /></td>
                                 </tr>
                                 <tr>
                                     <td class="fg-form-titles"><p>Course interest*</p></td>
@@ -77,30 +80,34 @@
                                 
                                 <tr>
                                     <td class="fg-form-titles"><p>Cell Number*</p></td>
-                                    <td class="fg-form-inputs"><input type="tel" id="fg-cellnumber" /></td>
+                                    <td class="fg-form-inputs"><input type="tel" id="fg-cellnumber" name="Cell" /></td>
                                 </tr>
                                 <tr>
                                     <td class="fg-form-titles"><p>Email*</p></td>
-                                    <td class="fg-form-inputs"><input type="email" id="fg-email" /></td>
+                                    <td class="fg-form-inputs"><input type="email" id="fg-email" name="Email" /></td>
                                 </tr>   
                                 <tr>
                                     <td class="fg-form-titles"><p>Where did you<br />hear about us?</p></td>
                                     <td class="fg-form-inputs">
                                         <table>
                                             <tr>
-                                                <td><input type="checkbox" id="fg-check-radio" /></td>
+                                                <td><input type="checkbox" id="fg-check-print" name="Heard[]" value="Print" /></td>
+                                                <td><span class="radio-txt">Print</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="fg-check-radio" name="Heard[]" value="Radio" /></td>
                                                 <td><span class="radio-txt">Radio</span></td>
                                             </tr>
                                             <tr>
-                                                <td><input type="checkbox" id="fg-check-flyer" /></td>
+                                                <td><input type="checkbox" id="fg-check-flyer" name="Heard[]"  value="Flyer"/></td>
                                                 <td><span class="radio-txt">Flyer</span></td>
                                             </tr>
                                             <tr>
-                                                <td><input type="checkbox" id="fg-check-web" /></td>
+                                                <td><input type="checkbox" id="fg-check-web" name="Heard[]" value="Web" /></td>
                                                 <td><span class="radio-txt">Web(i.e. Facebook)</span></td>
                                             </tr>
                                             <tr>
-                                                <td><input type="checkbox" id="fg-check-word" /></td>
+                                                <td><input type="checkbox" id="fg-check-word" name="Heard[]" value="Word of mouth" /></td>
                                                 <td><span class="radio-txt">Word of mouth</span></td>
                                             </tr>
                                         </table>
@@ -109,7 +116,7 @@
                                 
                                 <tr>
                                     <td class="fg-form-titles"><p>Message</p></td>
-                                    <td class="fg-form-inputs"><textarea id="fg-message"></textarea></td>
+                                    <td class="fg-form-inputs"><textarea id="fg-message" name="Message"></textarea></td>
                                 </tr>
                                 <tr>
                                     <td></td>

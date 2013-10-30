@@ -8,11 +8,28 @@ $("#submit_btn").click(function(e){
    valCourse =      validate_select("#fg-course");
    valCell =        validate("#fg-cellnumber");
    valEmail =       validate_email("#fg-email");
+   valTrick =       validate_trick("#fg-trick");
    
-   if(!valName || !valSurname || !valSchool || !valGrade || !valCourse || !valCell || !valEmail){
+   if(!valName || !valSurname || !valSchool || !valGrade || !valCourse || !valCell || !valEmail || !valTrick){
        alert('Please fill in the required fields.');
-       e.preventDefault();
    }else{
-       
+       $.ajax({
+          url: 'classes/validation.php',
+          type: 'post',
+          data: $('#fg_form').serialize(),
+          success: function(result){
+              var res = result.trim();
+              if(res == 'success'){
+                  window.location = 'thank-you.php';
+              }else{
+                  alert(res);
+              }
+          },
+          error: function () {
+            alert('There was an error submitting your request.');
+          }
+       });
    }
+   
+   e.preventDefault();
 });
