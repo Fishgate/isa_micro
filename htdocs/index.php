@@ -28,10 +28,7 @@
                           HEADER
         ==========================================-->
             <header>
-                <div class="download_desktop">
-                    <a href="download/application-form.pdf" target="_blank"><img src="img/download.png" alt="Download Application Form" /></a>
-                </div>
-                <img class="response-img" src="http://www.placehold.it/800x250" alt="isa carstens applications for 2014" />
+                <img class="response-img" src="img/isa_website_header.jpg" alt="isa carstens applications for 2014" />
             </header>
         <!--=======================================
                           BODY
