@@ -83,9 +83,9 @@ if(
             $phpmailer->AddReplyTo($_POST['Email'], $_POST['Name']);
             $phpmailer->IsHTML(true);
 
-            $phpmailer->AddAddress("tyrone@fishgate.co.za");
-            /*$phpmailer->AddAddress("jan@fishgate.co.za");
-            $phpmailer->AddAddress("renier@ilead.co.za");*/
+            //$phpmailer->AddAddress("tyrone@fishgate.co.za");
+            $phpmailer->AddAddress("jan@fishgate.co.za");
+           // $phpmailer->AddAddress("renier@ilead.co.za");
 
             $phpmailer->Subject = "Enquiry from Website";
 

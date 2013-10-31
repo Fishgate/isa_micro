@@ -12,16 +12,17 @@
  */
 //localhost
 define('DB_HOST',       'localhost');
-define('DB_NAME',       'isa_micro');
-define('DB_USERNAME',   'root');
-define('DB_PASSWORD',   'root');
+define('DB_NAME',       'blunttad_isa_site');
+define('DB_USERNAME',   'blunttad_isa');
+define('DB_PASSWORD',   '+@uwvcvWNZ~(');
 define('DB_LOGS_TBL',   'fg_enquiry_log');
 
 /**
  * Contact information of the admin, generaly used as "FROM" headers for email.
  * 
  */
-define('ADMIN_EMAIL', 'info@isacarstens.co.za');
+//define('ADMIN_EMAIL', 'info@isacarstens.co.za');
+define('ADMIN_EMAIL', 'jan@fishgate.co.za');
 define('ADMIN_NAME', 'Isa Carstens');
 
 /**
