@@ -209,6 +209,7 @@ header{
     border: 5px solid #fff;
     border-left: 0px;
     padding-left: 15px;
+    position: relative;
 }
 
 .fg-form-titles{
@@ -224,6 +225,24 @@ input{
 }
 select{
     width: 100%;
+    line-height: 1;
+    height: 34px;
+    padding: 0 10px;
+    background: url('');
+    border: 1px solid #999;
+    
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+}
+.dropper{
+    position: absolute;
+    right: 10px;
+    top: 15px;
 }
 input{
     padding: 2%;

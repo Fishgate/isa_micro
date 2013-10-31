@@ -61,11 +61,21 @@
                                 </tr>
                                 <tr>
                                     <td class="fg-form-titles"><p>Grade*</p></td>
-                                    <td class="fg-form-inputs"><input type="text" id="fg-grade" name="Grade" /></td>
+                                    <td class="fg-form-inputs">
+                                        <i class="dropper fa fa-sort"></i>
+                                        <select id="fg-grade" name ="Course">
+                                            <option>12</option>
+                                            <option>11</option>
+                                            <option>10</option>
+                                            <option>09</option>
+                                        </select>
+                                        <!--<input type="text" id="fg-grade" name="Grade" />-->
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td class="fg-form-titles"><p>Course interest*</p></td>
                                     <td class="fg-form-inputs">
+                                        <i class="dropper fa fa-sort"></i>
                                         <select id="fg-course" name="Course">
                                             <option value="0">-- Please Select --</option>
                                             <option>Somatology</option>
@@ -148,7 +158,7 @@
                     </p>
                     <!-- //////////////////////////////// COURSE -->
                     <br />
-                    <h2><i class="left social course-icon fa fa-chevron-right"></i>Gap</h2>
+                    <h2><i class="left social course-icon fa fa-chevron-right"></i>Gap Year</h2>
                     <p>
                         <strong>Entry Requirements:</strong> A National Senior Certificate (NSC) from the South African Matriculation Board
                     </p>
