@@ -20,7 +20,7 @@ $("#submit_btn").click(function(e){
           success: function(result){
               var res = result.trim();
               if(res == 'success'){
-                  window.location = 'thank-you.php';
+                  window.location = 'http://www.isacarstens.co.za/apply/thank-you.php';
               }else{
                   alert(res);
               }
