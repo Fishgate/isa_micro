@@ -64,6 +64,7 @@
                                     <td class="fg-form-inputs">
                                         <i class="dropper fa fa-sort"></i>
                                         <select id="fg-grade" name ="Course">
+                                            <option value="0">-- Please Select --</option>
                                             <option>12</option>
                                             <option>11</option>
                                             <option>10</option>

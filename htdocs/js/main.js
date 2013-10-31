@@ -4,7 +4,7 @@ $("#submit_btn").click(function(e){
    valName =        validate("#fg-name");
    valSurname =     validate("#fg-surname");
    valSchool =      validate("#fg-school");
-   valGrade =       validate("#fg-grade");
+   valGrade =       validate_select("#fg-grade");
    valCourse =      validate_select("#fg-course");
    valCell =        validate("#fg-cellnumber");
    valEmail =       validate_email("#fg-email");
