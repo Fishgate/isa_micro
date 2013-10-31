@@ -230,6 +230,8 @@ select{
     padding: 0 10px;
     background: url('');
     border: 1px solid #999;
+    color: #999;
+    font-size: 12px;
     
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
